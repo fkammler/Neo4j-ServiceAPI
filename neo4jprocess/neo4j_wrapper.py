@@ -42,7 +42,7 @@ class Neo4jWrapper:
         parameters = {
             'name': name
         }
-        return self.processor.get_node_json(query, parameters)
+        return dumps(self.processor.get_node_json(query, parameters), indent=4, sort_keys=False, default=str)
 
 
     def get_node_by_id(self, id):
