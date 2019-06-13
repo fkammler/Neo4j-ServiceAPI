@@ -43,7 +43,7 @@ settings = {
 
 **Returns:** Dictionary as a representation of the selected node
 
-### /getNextById/<id>
+##### /getNextById/<id>
 
 *Return all next nodes for a given ID*
     
@@ -51,7 +51,7 @@ settings = {
 
 **Returns:** Key 'nodes' is a list of dictionaries representing the successor nodes.
 
-### /getStuffById/<id>/<stuff_type>
+##### /getStuffById/<id>/<stuff_type>
     
 *Return attached stuff like tools or spareparts to a node given by ID*   
     
@@ -59,7 +59,7 @@ settings = {
     
 **Returns:** Key 'stuff' is a lsit of dictionaries representing all attached stuff.
 
-### /traverseTreeById/<id>
+##### /traverseTreeById/<id>
 
 *Traverse process model starting from a node given by id and return a graph representation.*
 
@@ -67,7 +67,7 @@ settings = {
 
 **Returns:** Dictionary as a representation of the graph. Keys are nodes (List of all nodes as dictionaries) and rels (list of all relationships as dictionaries)
 
-### /getAllStuffById/<id>/<stuff_type>
+##### /getAllStuffById/<id>/<stuff_type>
     
 *Return all attached stuff at the node given by id or at any successor node in the process model.*
     
@@ -79,6 +79,6 @@ settings = {
 
 Contributions and extensions as well as application examples are very welcome. Please do not hesitate to contact us.
 
-### Note:
+## Note
 - The repository also provides an exemplary business process ('cooling_error.cql') that can be used to test the database. To store the process in the database, you must simply query neo4j via its web interface with the entire code.
 - In its current version, the code contains only rudimentary error handling.
