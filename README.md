@@ -8,9 +8,11 @@ We use the REST-API as a base structure for different prototypes based on it:
 - A web-based orchestration tool for Smart Service Systems
 - A general data storage for information exchange in product service systems
 
-## Installation
+## Dependencies
 
 The project can be instantiated and tested in just a few steps. Required is a running installation of the Neo4j graph database (tested with version 3.0.3), as well as the python3 libraries neo4j and bottle.
+
+## Installation
 
 Edit web_api_example.py according to your neo4j setup and you are ready to start:
 
@@ -23,8 +25,32 @@ settings = {
 }
 ```
 
-## REST-Pipes
+## REST-Routes
 
+### /getStartByName/<name>
+    Return start event for a given Name.
+    
+        Parameters
+        ----------
+        name : string
+            The name of the start event.
+    
+        Returns
+        -------
+        dictionary
+            Representation of the start event.
+    
+### /getNodeById/<id>
+    
+### /getNextById/<id>
+    
+### /getStuffById/<id>/<stuff_type>
+    
+### /traverseTreeById/<id>
+
+### /getAllStuffById/<id>
+    
+### /getAllStuffById/<id>/stuff_type>
 
 
 ## Contribute
