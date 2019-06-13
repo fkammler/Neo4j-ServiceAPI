@@ -1,5 +1,7 @@
 # DataDrivenServiceAPI
 
+## Description
+
 This repository provides a code example of how business processes can be extended by sensor information and stored in the Neo4j graph database. The example contains a Python-based REST API that can be used to retrieve service activities and processes as JSON tuples from the graph.
 
 We use the REST-API as a base structure for different prototypes based on it:
@@ -74,6 +76,12 @@ settings = {
 **Parameters:** id: int, stuff_type: string (optional)
 
 **Returns:** Key 'Stuff' has a list of all attachments as dictionaries
+
+## Underlying Research Contribution
+
+The code example is supplementary to a research paper that was presented at ECIS 2019 in Stockholm & Uppsala, Swede (June 8-14 2019) and can be retrieved from the following link:
+
+[Kammler, Friedemann; Hagen, Simon; Brinker, Jonas; and Thomas, Oliver, (2019). "Leveraging the Value of Data Driven Service Systems in Manufacturing: A Graph-based Approach".](https://aisel.aisnet.org/ecis2019_rp/189)
 
 ## Contribute
 
