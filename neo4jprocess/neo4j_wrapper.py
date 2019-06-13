@@ -322,8 +322,13 @@ class QueryProcessor:
         '''
 
         with self.driver.session() as s:
-            node = s.run(query, **parameters).single()[0]
-            return QueryProcessor.node_to_jsonlike(node)
+            node = s.run(query, **parameters).single()
+            if node is None:
+                print('No Node Found!')
+                return 'No Node found'
+            else:
+                print(QueryProcessor.node_to_jsonlike(node[0]))
+                return QueryProcessor.node_to_jsonlike(node[0])
 
     def get_node_list_json(self, query, parameters):
         '''Return all  nodes for a given query and parameters.
