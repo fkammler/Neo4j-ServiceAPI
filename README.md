@@ -14,14 +14,14 @@ The project can be instantiated and tested in just a few steps. Required is a ru
 
 Edit web_api_example.py according to your neo4j setup and you are ready to start:
 
-'''python
+```python
 settings = {
     'user': 'neo4j',
     'password': 'example',
     'ip': '127.0.0.1',
     'port': 7687
 }
-'''
+´´´
 
 ## REST-Pipes
 
