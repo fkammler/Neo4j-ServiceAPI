@@ -12,7 +12,7 @@ We use the REST-API as a base structure for different prototypes based on it:
 
 ## Dependencies
 
-The project can be instantiated and tested in just a few steps. Required is a running installation of the Neo4j graph database (tested with version 3.0.3), as well as the python3 libraries neo4j and bottle.
+The project can be instantiated and tested in just a few steps. Required is a running installation of the [Neo4j graph database](https://neo4j.com/) (tested with version 3.0.3), as well as the python3 libraries [neo4j](https://github.com/neo4j/neo4j-python-driver) and [bottle](https://github.com/bottlepy/bottle).
 
 ## Installation
 
@@ -29,7 +29,7 @@ settings = {
 
 ## REST-Routes
 
-##### /getStartByName/<name>
+##### /getStartByName/\<name\>
     
 *Return start event for a given Name.*
     
@@ -37,7 +37,7 @@ settings = {
 
  **Returns:** Dictionary as a representation of the start event
     
-##### /getNodeById/<id>
+##### /getNodeById/\<id\>
 
 *Return node for a given ID*
 
@@ -45,7 +45,7 @@ settings = {
 
 **Returns:** Dictionary as a representation of the selected node
 
-##### /getNextById/<id>
+##### /getNextById/\<id\>
 
 *Return all next nodes for a given ID*
     
@@ -53,7 +53,7 @@ settings = {
 
 **Returns:** Key 'nodes' is a list of dictionaries representing the successor nodes.
 
-##### /getStuffById/<id>/<stuff_type>
+##### /getStuffById/\<id\>/\<stuff_type\>
     
 *Return attached stuff like tools or spareparts to a node given by ID*   
     
@@ -61,7 +61,7 @@ settings = {
     
 **Returns:** Key 'stuff' is a lsit of dictionaries representing all attached stuff.
 
-##### /traverseTreeById/<id>
+##### /traverseTreeById/\<id\>
 
 *Traverse process model starting from a node given by id and return a graph representation.*
 
@@ -69,7 +69,7 @@ settings = {
 
 **Returns:** Dictionary as a representation of the graph. Keys are nodes (List of all nodes as dictionaries) and rels (list of all relationships as dictionaries)
 
-##### /getAllStuffById/<id>/<stuff_type>
+##### /getAllStuffById/\<id\>/\<stuff_type\>
     
 *Return all attached stuff at the node given by id or at any successor node in the process model.*
     
