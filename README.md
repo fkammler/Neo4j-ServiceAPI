@@ -37,43 +37,43 @@ settings = {
     
 ##### /getNodeById/<id>
 
-* Return node for a given ID *
+*Return node for a given ID*
 
-** Parameters: ** id: int
+**Parameters:** id: int
 
-** Returns: ** Dictionary as a representation of the selected node
+**Returns:** Dictionary as a representation of the selected node
 
 ### /getNextById/<id>
 
-* Return all next nodes for a given ID *
+*Return all next nodes for a given ID*
     
-** Parameters: ** id: int
+**Parameters:** id: int
 
-** Returns: ** Key 'nodes' is a list of dictionaries representing the successor nodes.
+**Returns:** Key 'nodes' is a list of dictionaries representing the successor nodes.
 
 ### /getStuffById/<id>/<stuff_type>
     
-* Return attached stuff like tools or spareparts to a node given by ID *   
+*Return attached stuff like tools or spareparts to a node given by ID*   
     
-** Parameters: ** id: int
+**Parameters:** id: int
     
-** Returns: ** Key 'stuff' is a lsit of dictionaries representing all attached stuff.
+**Returns:** Key 'stuff' is a lsit of dictionaries representing all attached stuff.
 
 ### /traverseTreeById/<id>
 
-* Traverse process model starting from a node given by id and return a graph representation. *
+*Traverse process model starting from a node given by id and return a graph representation.*
 
-** Parameters: ** id: int
+**Parameters:** id: int
 
-** Returns: ** Dictionary as a representation of the graph. Keys are nodes (List of all nodes as dictionaries) and rels (list of all relationships as dictionaries)
+**Returns:** Dictionary as a representation of the graph. Keys are nodes (List of all nodes as dictionaries) and rels (list of all relationships as dictionaries)
 
 ### /getAllStuffById/<id>/<stuff_type>
     
-* Return all attached stuff at the node given by id or at any successor node in the process model. *
+*Return all attached stuff at the node given by id or at any successor node in the process model.*
     
-** Parameters: ** id: int, stuff_type: string (optional)
+**Parameters:** id: int, stuff_type: string (optional)
 
-** Returns: ** Key 'Stuff' has a list of all attachments as dictionaries
+**Returns:** Key 'Stuff' has a list of all attachments as dictionaries
 
 ## Contribute
 
